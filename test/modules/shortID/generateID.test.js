@@ -1,6 +1,6 @@
-import _ from 'lodash';
-import assert from 'assert';
-import { shortID } from '../../../src/modules/index.js';
+const _ = require('lodash');
+const assert = require('assert');
+const { shortID } = require('../../../src/modules');
 
 describe('generateID()', () => {
   it('it should generate 100000 uniq ID continuously', () => {

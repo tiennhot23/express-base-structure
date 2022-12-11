@@ -1,7 +1,7 @@
-import _ from 'lodash';
-import assert from 'assert';
-import { redisFunc } from '../../../src/modules/index.js';
-import redis from '../../../src/services/redis.js';
+const _ = require('lodash');
+const assert = require('assert');
+const redis = require('ioredis')
+const { redisFunc } = require('../../../src/modules');
 
 describe('keyScan()', () => {
   before(async () => {

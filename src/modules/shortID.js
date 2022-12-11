@@ -62,4 +62,4 @@ function genTimestampBase32() {
   return Number(new Date()).toString(32);
 }
 
-export default { generateID, genTimestampBase32 };
+module.exports = { generateID, genTimestampBase32 };

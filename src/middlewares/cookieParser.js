@@ -1,4 +1,4 @@
-import _ from 'lodash';
+const _ = require('lodash');
 
 const parseCookie = async (req, __, next) => {
   req.cookie = {};
@@ -13,4 +13,4 @@ const parseCookie = async (req, __, next) => {
   next();
 };
 
-export default parseCookie;
+module.exports = parseCookie;

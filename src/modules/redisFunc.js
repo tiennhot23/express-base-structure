@@ -1,5 +1,5 @@
 /* eslint-disable no-await-in-loop */
-import { redis } from '../services/index.js';
+const redis = require('ioredis');
 
 async function keyScan(pattern, count = 20) {
   const result = [];
@@ -14,4 +14,4 @@ async function keyScan(pattern, count = 20) {
   return result;
 }
 
-export default { keyScan };
+module.exports = { keyScan };

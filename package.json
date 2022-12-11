@@ -3,11 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "main": "nothing.js",
-  "type": "module",
   "scripts": {
-    "start": "node server.js",
+    "start": "node index.js",
     "test": "mocha ./test/**/*.test.js --timeout 10000 --exit",
-    "dev": "nodemon server.js"
+    "dev": "nodemon index.js"
   },
   "keywords": [],
   "author": "",
@@ -17,12 +16,13 @@
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
     "express-session": "^1.17.3",
-    "express-validator": "^6.14.2",
     "ioredis": "^5.2.4",
+    "joi": "^17.7.0",
     "lodash": "^4.17.21",
     "module-alias": "^2.2.2",
     "mongoose": "^6.7.5",
-    "npmlog": "^7.0.1"
+    "npmlog": "^7.0.1",
+    "uuid": "^9.0.0"
   },
   "devDependencies": {
     "@faker-js/faker": "^7.6.0",
@@ -32,6 +32,8 @@
     "eslint-plugin-jsx-a11y": "6.5.1",
     "eslint-plugin-react": "7.28.0",
     "eslint-plugin-react-hooks": "4.3.0",
+    "mocha": "^10.1.0",
+    "node-fetch": "^2.6.7",
     "nodemon": "^2.0.20"
   }
 }
